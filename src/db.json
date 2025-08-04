@@ -1,0 +1,32 @@
+{
+  "celebrityDeaths": [
+    {
+      "id": "1",
+      "name": "Ozzy Osbourne",
+      "causeOfDeath": "Parkinson's Disease",
+      "dateOfDeath": "07-22-2025",
+      "deceased": true
+    },
+    {
+      "id": "2",
+      "name": "Julian McMahon",
+      "causeOfDeath": "Cancer",
+      "dateOfDeath": "07-02-2025",
+      "deceased": true
+    },
+    {
+      "id": "3",
+      "name": "Anne Burrell",
+      "causeOfDeath": "Suicide",
+      "dateOfDeath": "06-17-2025",
+      "deceased": true
+    },
+    {
+      "id": "4",
+      "name": "Chuck Mangione",
+      "causeOfDeath": "Natural Causes",
+      "dateOfDeath": "07-22-2025",
+      "deceased": true
+    }
+  ]
+}

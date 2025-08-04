@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="src/style.css">
+    <title>2025 Celebrity Deaths</title>
+</head>
+<body>
+<div class="container mt-5">
+    <h1 class="text-center mb-4">Celebrity Deaths of 2025</h1>
+
+    <div class="card mb-4">
+        <div class="card-body">
+            <h5 class="card-title">Add New Celebrity Death</h5>
+            <form id="addCelebrityForm">
+                <div class="row">
+                    <div class="col-md-6 mb-3">
+                        <label for="newCelebrityName" class="form-label">Celebrity Name</label>
+                        <input type="text" id="newCelebrityName" class="form-control" placeholder="e.g., Ozzy Osbourne" required>
+                    </div>
+                    <div class="col-md-6 mb-3">
+                        <label for="newDeathCause" class="form-label">Cause of Death</label>
+                        <input type="text" id="newDeathCause" class="form-control" placeholder="e.g., Natural Causes" required>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-6 mb-3">
+                        <label for="newDeathDate" class="form-label">Date of Death</label>
+                        <input type="date" class="form-control" id="newDeathDate" required>
+                    </div>
+                    <div class="col-md-6 d-flex align-items-end mb-3">
+                        <button type="submit" class="btn btn-primary w-100">Add Celebrity</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <div class="table-responsive">
+        <table class="table table-striped table-hover" id="celebrityDeathTable">
+            <thead>
+                <tr>
+                    <th scope="col">#</th>
+                    <th scope="col">Name</th>
+                    <th scope="col">Cause of Death</th>
+                    <th scope="col">Date of Death</th>
+                    <th scope="col">Status</th>
+                    <th scope="col">Actions</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Celebrity death rows will be inserted here by JavaScript -->
+            </tbody>
+        </table>
+    </div>
+</div>
+
+<script src="node_modules/jquery/dist/jquery.js"></script>
+<script src="node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+<script type="module" src="src/index.ts"></script>
+</body>
+</html>
